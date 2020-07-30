@@ -1,28 +1,25 @@
-# name:    table_formatter.py
+# name:    DEK_wordlist.py
 # author:  nbehrnd@yahoo.com
 # license: MIT 2020
-# date:    2020-07-27 (YYYY-MM-DD)
-# edit:    2020-07-30 (YYYY-MM-DD)
+# date:    2020-07-30 (YYYY-MM-DD)
+# edit:
 #
-"""Tabellenausgabe der Stenographie .svg in einer kommagetrennten Datei.
+"""Listung der Stenographie .svg in einer kommagetrennten Datei / Wunsch 2.
 
     Im Stenographiearchiv sind die .svg im Muster von
 
     DEK Deutsche Einheitskurzschrift - Verkehrsschrift - Aachen v2.svg
 
-    abgelegt.  Jedem dieser Dateien soll ein string zugeordnet werden,
-    der dem Format
+    abgelegt.  Aus jedem Dateinamen soll das Stichwort entnommen (hier
+    etwa "Aachen v2"), und alphabetisch in einer Liste abgelegt werden.
 
-    "[[File:DEK Deutsche Einheitskurzschrift - Verkehrsschrift - Aachen v2.svg|thumb|Aachen v2]]"
+    Mit dem Aufruf von der Kommandozeile mit Python als
 
-    entspricht.  Aufgerufen von der Kommandozeile soll Python diese
-    Zuordnungen, bereits in alphabetischer Ordnung, in eine Textdatei
-    "DEK_Tabelle.txt" schreiben:
+    python DEK_wordlist.py
 
-    python table_formatter.py
-
-    wenn diese Datei (table_formatter.py) sich im gleichen Ordner wie
-    die originalen .svg befindet."""
+    wenn sich diese Datei (DEK_wordlist.py) sich im gleichen Ordner
+    wie die originalen .svg befindet wirt die Datei "DEK_wordlist.txt"
+    geschrieben."""
 
 import os
 SVG_REGISTER = []
@@ -53,16 +50,17 @@ def string_conversion():
         keyword = file_name.split(" - ")[-1].strip()
         keyword = keyword[:-4]
 
-        output = ''.join(["[[File:", file_name, "|thumb|", keyword, "]]"])
-        OUTPUT_REGISTER.append(output)
+        OUTPUT_REGISTER.append(str(keyword))
     print("There are {} output data.".format(len(OUTPUT_REGISTER)))
 
 
 def report_writing():
     """Generate the permanent record."""
-    with open("DEK_Tabelle.txt", mode="w") as newfile:
-        for entry in OUTPUT_REGISTER:
-            newfile.write("{}\n".format(entry))
+    with open("DEK_wordlist.txt", mode="w") as newfile:
+        for entry in OUTPUT_REGISTER[:-1]:
+            newfile.write("{}, ".format(entry))
+
+        newfile.write("{}.".format(OUTPUT_REGISTER[:-1]))
 
 
 def main():

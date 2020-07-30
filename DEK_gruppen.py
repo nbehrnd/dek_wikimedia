@@ -1,10 +1,10 @@
-# name:    table_formatter.py
+# name:    DEK_gruppen.py
 # author:  nbehrnd@yahoo.com
 # license: MIT 2020
-# date:    2020-07-27 (YYYY-MM-DD)
-# edit:    2020-07-30 (YYYY-MM-DD)
+# date:    2020-07-30 (YYYY-MM-DD)
+# edit:
 #
-"""Tabellenausgabe der Stenographie .svg in einer kommagetrennten Datei.
+"""Listung der Stenographie .svg in Dreiergruppen / Wunsch 3.
 
     Im Stenographiearchiv sind die .svg im Muster von
 
@@ -15,13 +15,24 @@
 
     "[[File:DEK Deutsche Einheitskurzschrift - Verkehrsschrift - Aachen v2.svg|thumb|Aachen v2]]"
 
-    entspricht.  Aufgerufen von der Kommandozeile soll Python diese
-    Zuordnungen, bereits in alphabetischer Ordnung, in eine Textdatei
-    "DEK_Tabelle.txt" schreiben:
+    entspricht.  Weiterhin sind diese strings in dem Muster
 
-    python table_formatter.py
+    | [[File:DEK Deutsche Einheitskurzschrift - Verkehrsschrift - Bockwürste.svg|thumb|Bockwürste]]
+    || [[File:DEK Deutsche Einheitskurzschrift - Verkehrsschrift - Bockwurst.svg|thumb|Bockwurst]]
+    || [[File:DEK Deutsche Einheitskurzschrift - Verkehrsschrift - Wurst.svg|thumb|Wurst]]
+    |-
+    | [[File:DEK Deutsche Einheitskurzschrift - Verkehrsschrift - Xaver.svg|thumb|Bockwürste]]
+    || [[File:DEK Deutsche Einheitskurzschrift - Verkehrsschrift - Yacht.svg|thumb|Bockwurst]]
+    || [[File:DEK Deutsche Einheitskurzschrift - Verkehrsschrift - Zündkerze.svg|thumb|Wurst]]
+    |-
 
-    wenn diese Datei (table_formatter.py) sich im gleichen Ordner wie
+    in Dreiergruppen in Datei "DEK_gruppen.txt" abzulegen.
+
+    Aufruf von der Kommandozeile mit Python 3 als
+
+    python DEK_gruppen.py
+
+    wenn diese Datei (DEK_gruppen.py) sich im gleichen Ordner wie
     die originalen .svg befindet."""
 
 import os
@@ -47,20 +58,31 @@ def string_conversion():
 
     Zusammenstellung der strings aus den Dateinamen unter der Annahme,
     dass es Stichwort selbst keinen Gedankenstrich hat."""
+    iterator = 0
     for entry in SVG_REGISTER:
+        iterator += 1
         file_name = str(entry)
 
         keyword = file_name.split(" - ")[-1].strip()
         keyword = keyword[:-4]
 
-        output = ''.join(["[[File:", file_name, "|thumb|", keyword, "]]"])
+        if iterator == 1:
+            output = ''.join(["| [[File:", file_name, "|thumb|", keyword, "]]"])
+        elif iterator == 2:
+            output = ''.join(["|| [[File:", file_name, "|thumb|", keyword, "]]"])
+        elif iterator == 3:
+            output = ''.join(["|| [[File:", file_name, "|thumb|", keyword, "]]", "\n|-"])
+            iterator = 0
+        else:
+            print("Warnung, Zusammenstellung der Ausgabedaten eventuell fehlerhaft.")
+
         OUTPUT_REGISTER.append(output)
     print("There are {} output data.".format(len(OUTPUT_REGISTER)))
 
 
 def report_writing():
     """Generate the permanent record."""
-    with open("DEK_Tabelle.txt", mode="w") as newfile:
+    with open("DEK_gruppen.txt", mode="w") as newfile:
         for entry in OUTPUT_REGISTER:
             newfile.write("{}\n".format(entry))
 
