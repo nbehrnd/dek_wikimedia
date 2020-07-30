@@ -2,8 +2,7 @@
 # author:  nbehrnd@yahoo.com
 # license: MIT 2020
 # date:    2020-07-27 (YYYY-MM-DD)
-# 
-# edit:
+# edit:    2020-07-30 (YYYY-MM-DD)
 #
 """Tabellenausgabe der Stenographie .svg in einer kommagetrennten Datei.
 
@@ -56,7 +55,7 @@ def string_conversion():
 
         output = ''.join(["[[File:", file_name, "|thumb|", keyword, "]]"])
         OUTPUT_REGISTER.append(output)
-    print("There are {} output data".format(len(OUTPUT_REGISTER)))
+    print("There are {} output data.".format(len(OUTPUT_REGISTER)))
 
 
 def report_writing():
