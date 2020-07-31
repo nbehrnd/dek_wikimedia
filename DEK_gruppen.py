@@ -2,7 +2,7 @@
 # author:  nbehrnd@yahoo.com
 # license: MIT 2020
 # date:    2020-07-30 (YYYY-MM-DD)
-# edit:
+# edit:    2020-07-31 (YYYY-MM-DD)
 #
 """Listung der Stenographie .svg in Dreiergruppen / Wunsch 3.
 
@@ -49,7 +49,7 @@ def identify_svg():
         if file.endswith(".svg"):
             SVG_REGISTER.append(file)
 
-    SVG_REGISTER.sort()
+    SVG_REGISTER.sort()  # Sort as if all were lower case only.
     print("There are {} data identified.".format(len(SVG_REGISTER)))
 
 
