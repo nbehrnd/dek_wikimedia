@@ -1,3 +1,6 @@
+#!/usr/bin/python3
+# -*- coding: utf-8 -*-
+
 # name:    DEK_wikimedia_preformat.py
 # author:  nbehrnd@yahoo.com
 # license: MIT, 2020

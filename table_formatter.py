@@ -1,8 +1,11 @@
+#!/usr/bin/python3
+# -*- coding: utf-8 -*-
+
 # name:    table_formatter.py
 # author:  nbehrnd@yahoo.com
 # license: MIT 2020
 # date:    2020-07-27 (YYYY-MM-DD)
-# edit:    2020-07-30 (YYYY-MM-DD)
+# edit:    2020-09-11 (YYYY-MM-DD)
 #
 """Tabellenausgabe der Stenographie .svg in einer kommagetrennten Datei.
 

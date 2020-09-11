@@ -1,8 +1,11 @@
+#!/usr/bin/python3
+# -*- coding: utf-8 -*-
+
 # name:    DEK_wikimedia_lists.py
 # author:  nbehrnd@yahoo.com
 # license: MIT 2020
 # date:    2020-09-10 (YYYY-MM-DD)
-# edit:
+# edit:    2020-09-11 (YYYY-MM-DD)
 #
 """Assistenzskript #5 zu Wikimedia Projekt zur DEK / Verkehrsschrift.
 
