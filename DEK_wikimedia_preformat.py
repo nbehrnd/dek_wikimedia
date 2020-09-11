@@ -2,7 +2,7 @@
 # author:  nbehrnd@yahoo.com
 # license: MIT, 2020
 # date:    2020-09-10 (YYYY-MM-DD)
-# edit:
+# edit:    2020-09-11 (YYYY-MM-DD)
 #
 """Assistant script #4: reformat Wikimedia's list of addresses of .svg.
 
@@ -39,6 +39,7 @@ import sys
 import zipfile
 
 from datetime import date
+from urllib.parse import unquote
 
 
 def input_identification():
@@ -85,7 +86,21 @@ def file_format():
     try:
         with open("1.txt", mode="r") as source:
             for line in source:
-                register.append(str(line).strip())
+
+                # To provide the addresses in the order of consecution
+                # as DEK_wikimedia_lists.py does for the word-list,
+                # the file names (converted into UTF-8, with umlauts)
+                # are injected prior to the address strings.  The use
+                # of upper and lower case is irrelevant for the sort.
+                address_line = str(line).strip()
+
+                key_to_sort = address_line.split("_-_")[-1]
+                key_to_sort = unquote(key_to_sort)
+
+                sort_string = ":::".join([key_to_sort, address_line])
+                register.append(sort_string)
+        register.sort(key=str.lower)
+
         header += str("# data: {}\n#\n".format(len(register)))
     except IOError:
         print("Unable to read intermediate file '1.txt'.")
@@ -96,7 +111,9 @@ def file_format():
         with open("wikimedia_addresses.txt", mode="w") as newfile:
             newfile.write(header)
             for entry in register:
-                newfile.write("{}\n".format(entry))
+                # Remove of the "key_to_sort", the UTF-8 file name:
+                retain = str(entry).split(":::")[-1]
+                newfile.write("{}\n".format(retain))
         print("File 'wikimedia_addresses.txt' was written.")
 
     except IOError:
