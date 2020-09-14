@@ -1,0 +1,16 @@
+# name:  file_count.txt
+#
+# Per curiosity, tracking the number of Wikimedia's .svg addressses.
+# The date, expressed in the format of YYYY-MM-DD, is the day when
+# Wikimedia was called to list all addresses of files simultaneously
+# tagged by 'SVG' and 'Deutsche Einheitskurzschrit'. Entry time, as
+# in min:ss, tracks the time necessary for Wikimedia to generate the
+# listing, delivered in a zip-compressed .txt file.  (Once fetched
+# locally, the generation of the three helpful lists is complete in
+# less than half a second each; performed right after)  Data is the
+# number of addresses considered.  Column separator is the colon,
+# missing entries are marked by the string 'None'.
+
+date;time;data
+2020-09-10;None;25900
+2020-09-14;01:54;26065
