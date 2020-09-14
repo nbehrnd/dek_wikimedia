@@ -1,8 +1,11 @@
+#!/usr/bin/python3
+# -*- coding: utf-8 -*-
+
 # name:    DEK_wikimedia_lists.py
 # author:  nbehrnd@yahoo.com
 # license: MIT 2020
 # date:    2020-09-10 (YYYY-MM-DD)
-# edit:
+# edit:    2020-09-14 (YYYY-MM-DD)
 #
 """Assistenzskript #5 zu Wikimedia Projekt zur DEK / Verkehrsschrift.
 
@@ -47,15 +50,15 @@
     anschliessende Sortierung (a-z, sodann Umlaute) behandelt Gross-
     und Kleinschreibung ohne Unterschied.
 
-    Im Verlauf des Einsatzes fragt das Skript nach dem Ausgabeformat.
-    Dabei stehen zur Auswahl:
-    + Option [1] die fortlaufende, alphabetisch sortierte Wortliste.
+    Bereits bei Aufruf des Skriptes muss die Auswahl eines der drei
+    folgenden Ausgabeformate erfolgen:
+    + Option -w die fortlaufende, alphabetisch sortierte Wortliste.
       Da einige der Dateinamen mehrere Beispiele illustrieren, die
       durch ein Komma getrennt sind, werden die einzelnen Dateien
       voneinander ist das Trennzeichen das Semikolon.  Ablage in Datei
       [wikimedia_wordlist.txt].
 
-    + Option [2], die alphabetisch sortierte Liste von Dateinamen mit
+    + Option -p, die alphabetisch sortierte Liste von Dateinamen mit
       Hinweis auf das Vorschaubild (thumbnail) in einem Muster von
 
       [[File:DEK Deutsche Einheitskurzschrift - Verkehrsschrift - Aachen.svg|thumb|Aachen]]
@@ -63,7 +66,7 @@
       Hier ist das Trennzeichen der Zeilenvorschub, \n.  Ablage in
       Datei [wikimedia_thumbnail_list.txt].
 
-    + Option [3], die alphabetisch sortierte Liste von Dateinamen mit
+    + Option -g, die alphabetisch sortierte Liste von Dateinamen mit
       Hinweis auf das Vorschaubild (thumbnail) in Dreiergruppen nach
       dem Muster
 
@@ -91,10 +94,14 @@
     Auf diese Weise soll die Verwaltung der Listen mit git unter
     GitHub vereinfacht werden."""
 
+import argparse
 import sys
 
 from datetime import date
 from urllib.parse import unquote
+
+register = []
+RETAINER = []
 
 
 def check_python():
@@ -108,165 +115,166 @@ def check_python():
         print("\nBe sure to call the script with Python 3, only.\n")
 
 
-def input_identification():
-    """Identify what file should be read."""
-    global SOURCE
-    SOURCE = ""
+def file_read():
+    """Identify the file to read."""
     try:
-        if sys.argv[1] is not None:
-            SOURCE = str(sys.argv[1])
-    except:
-        print("\nThe expected use of this script is by\n")
-        print("    python DEK_wikimedia_lists.py [wikimedia_addresses.txt]\n")
-        print("No change of any data.  Exit.\n")
+        with args.inputfile as source:
+            for line in source:
+                register.append(str(line).strip())
+
+    # except Exception:
+    except IOError:
+        print("File not accessible, exit.")
         sys.exit()
+        #        print(parser.print_usage())
 
 
 def input_reader():
-    """Read the addresses, build a register of UTF-8 encoded entries."""
-    global REGISTER
-    REGISTER = []
-    try:
-        with open(SOURCE, mode="r") as source:
-            for line in source:
-                # identify the interesting part:
-                if str(line).startswith("#") is False:
-                    retain = str(line).strip()
-                    retain = retain.split("_-_")[-1]
+    """Build an UTF-8 encoded register."""
 
-                    # re-encode the keyword:
-                    retain = unquote(str(retain))
-                    retain = str(retain)[:-4]
+    for line in register:
+        if str(line).startswith("#") is False:
 
-                    # substitute separating underscore chars by spaces:
-                    per_entry = ""
-                    for char in retain:
-                        if str(char) == str("_"):
-                            per_entry += str(" ")
-                        else:
-                            per_entry += str(char)
+            retain = str(line).strip()
+            retain = retain.split("_-_")[-1]
 
-                    REGISTER.append(per_entry)
-        REGISTER.sort(key=str.lower)
+            # re-encode the keyword:
+            retain = unquote(str(retain))
+            retain = str(retain)[:-4]
 
-    except IOError:
-        print("File '{}' not accessible.  Exit.".format(SOURCE))
-        sys.exit()
+            # substitute separating underscore chars by spaces:
+            per_entry = ""
+            for char in retain:
+                if str(char) == str("_"):
+                    per_entry += str(" ")
+                else:
+                    per_entry += str(char)
+
+            RETAINER.append(per_entry)
+    RETAINER.sort(key=str.lower)
 
 
-def output_writer():
-    """Write a permanent word_list, table_list, or triple_group."""
+def output_wordlist():
+    """Provide the list of words, sorted, separated by a semicolon."""
     today = date.today()
 
-    header = str("# name: wikimedia_wordlist.txt\n")
-    header += str("# date: {} (YYYY-MM-DD)\n".format(today))
-    header += str("# data: {}\n#\n".format(str(len(REGISTER))))
+    try:
+        with open("wikimedia_wordlist.txt", mode="w") as newfile:
+            newfile.write("# name: wikimedia_wordlist.txt\n")
+            newfile.write("# date: {} (YYYY-MM-DD)\n".format(today))
+            newfile.write("# data: {}\n#\n".format(str(len(RETAINER))))
 
-    # define the output target:
-    print("\nSelect one of the following options:")
-    print("[1]    sorted, semicolon-separated word-list")
-    print("[2]    sorted listed view on a TOC")
-    print("[3]    sorted listed view on a TOC in groups of three")
-    print("[0]    leave the script without changing data.\n")
-
-    choice = input("Your choice: ")
-
-    # create the output accordingly:
-    if (choice == str("0")) or (choice not in ["1", "2", "3"]):
-        # quit the script:
-        print("\nThe script closes now.  No action on the data.")
+            for entry in RETAINER[:-1]:
+                newfile.write("{}; ".format(entry))
+            newfile.write(RETAINER[-1])
+        print("File 'wikimedia_wordlist.txt' was written.")
+    except IOError:
+        print("Error writing file 'wikimedia_wordlist.txt'.  Exit.")
         sys.exit()
 
-    elif choice == str("1"):
-        # sorted word-list; separate by semicolon:
-        try:
-            with open("wikimedia_wordlist.txt", mode="w") as newfile:
-                newfile.write("# name: wikimedia_wordlist.txt\n")
-                newfile.write("# date: {} (YYYY-MM-DD)\n".format(today))
-                newfile.write("# data: {}\n#\n".format(str(len(REGISTER))))
 
-                for entry in REGISTER[:-1]:
-                    newfile.write("{}; ".format(entry))
-                newfile.write(REGISTER[-1])
-            print("File 'wikimedia_wordlist.txt' was written.")
-        except IOError:
-            print("Error writing file 'wikimedia_wordlist.txt'.  Exit.")
-            sys.exit()
+def output_preview_list():
+    """Provide the simple preview listing, separated by carriage return."""
+    # "[[File:DEK Deutsche Einheitskurzschrift - Verkehrsschrift - Aachen v2.svg|thumb|Aachen v2]]"
+    today = date.today()
 
-    elif choice == str("2"):
-        # simple TOC listing, without the quotation marks a pattern of:
-        # "[[File:DEK Deutsche Einheitskurzschrift - Verkehrsschrift - Aachen v2.svg|thumb|Aachen v2]]"
-        try:
-            with open("wikimedia_thumbnail_list.txt", mode="w") as newfile:
-                newfile.write("# name: wikimedia_thumbnail_list.txt\n")
-                newfile.write("# date: {} (YYYY-MM-DD)\n".format(today))
-                newfile.write("# data: {}\n#\n".format(str(len(REGISTER))))
+    try:
+        with open("wikimedia_thumbnail_list.txt", mode="w") as newfile:
+            newfile.write("# name: wikimedia_thumbnail_list.txt\n")
+            newfile.write("# date: {} (YYYY-MM-DD)\n".format(today))
+            newfile.write("# data: {}\n#\n".format(str(len(RETAINER))))
 
-                for entry2 in REGISTER:
-                    output = str(
-                        "[[File:DEK Deutsche Einheitskurzschrift - Verkehrsschrift - {}.svg|thumb|{}]]"
-                        .format(entry2, entry2))
-                    newfile.write("{}\n".format(output))
-            print("File 'wikimedia_thumbnail_list.txt' was written.")
-        except IOError:
-            print("Error writing file 'wikimedia_thumbnail_list.txt'.  Exit.")
-            sys.exit()
-
-    elif choice == str("3"):
-        # TOC listing in groups of three, without the quotation marks a pattern of:
-        # "| [[File:DEK Deutsche Einheitskurzschrift - Verkehrsschrift - Bockwürste.svg|thumb|Bockwürste]]
-        # || [[File:DEK Deutsche Einheitskurzschrift - Verkehrsschrift - Bockwurst.svg|thumb|Bockwurst]]
-        # || [[File:DEK Deutsche Einheitskurzschrift - Verkehrsschrift - Wurst.svg|thumb|Wurst]]
-        # |-
-        # | [[File:DEK Deutsche Einheitskurzschrift - Verkehrsschrift - Xaver.svg|thumb|Bockwürste]]
-        # || [[File:DEK Deutsche Einheitskurzschrift - Verkehrsschrift - Yacht.svg|thumb|Bockwurst]]
-        # || [[File:DEK Deutsche Einheitskurzschrift - Verkehrsschrift - Zündkerze.svg|thumb|Wurst]]
-        # |-"
-
-        try:
-            with open("wikimedia_thumbnail_groups.txt", mode="w") as newfile:
-                newfile.write("# name: wikimedia_thumbnail_groups.txt\n")
-                newfile.write("# date: {} (YYYY-MM-DD)\n".format(today))
-                newfile.write("# data: {}\n#\n".format(str(len(REGISTER))))
-
-                iterator = 0
-                for entry in REGISTER:
-                    file_name = ''.join([entry, ".svg"])
-                    keyword = str(entry)
-                    iterator += 1
-
-                    if iterator == 1:
-                        output = ''.join(
-                            ["| [[File:", file_name, "|thumb|", keyword, "]]"])
-                    elif iterator == 2:
-                        output = ''.join([
-                            "|| [[File:", file_name, "|thumb|", keyword, "]]"
-                        ])
-                    elif iterator == 3:
-                        output = ''.join([
-                            "|| [[File:", file_name, "|thumb|", keyword, "]]",
-                            "\n|-"
-                        ])
-                        iterator = 0
-                    else:
-                        print(
-                            "Warnung, Zusammenstellung der Ausgabedaten eventuell fehlerhaft."
-                        )
-                    newfile.write("{}\n".format(output))
-            print("File 'wikimedia_thumbnail_groups.txt' was written.")
-        except IOError:
-            print(
-                "Error writing file 'wikimedia_thumbnail_groups.txt'.  Exit.")
-            sys.exit()
+            for entry2 in RETAINER:
+                output = str(
+                    "[[File:DEK Deutsche Einheitskurzschrift - Verkehrsschrift - {}.svg|thumb|{}]]"
+                    .format(entry2, entry2))
+                newfile.write("{}\n".format(output))
+        print("File 'wikimedia_thumbnail_list.txt' was written.")
+    except IOError:
+        print("Error writing file 'wikimedia_thumbnail_list.txt'.  Exit.")
+        sys.exit()
 
 
-def main():
-    """Join the elementary functions."""
-    check_python()
-    input_identification()
+def output_grouped_preview():
+    """Similar as in function output_preview_list(), but in groups of three."""
+    # "| [[File:DEK Deutsche Einheitskurzschrift - Verkehrsschrift - Bockwürste.svg|thumb|Bockwürste]]
+    # || [[File:DEK Deutsche Einheitskurzschrift - Verkehrsschrift - Bockwurst.svg|thumb|Bockwurst]]
+    # || [[File:DEK Deutsche Einheitskurzschrift - Verkehrsschrift - Wurst.svg|thumb|Wurst]]
+    # |-
+    # | [[File:DEK Deutsche Einheitskurzschrift - Verkehrsschrift - Xaver.svg|thumb|Bockwürste]]
+    # || [[File:DEK Deutsche Einheitskurzschrift - Verkehrsschrift - Yacht.svg|thumb|Bockwurst]]
+    # || [[File:DEK Deutsche Einheitskurzschrift - Verkehrsschrift - Zündkerze.svg|thumb|Wurst]]
+    # |-"
+    today = date.today()
+
+    try:
+        with open("wikimedia_thumbnail_groups.txt", mode="w") as newfile:
+            newfile.write("# name: wikimedia_thumbnail_groups.txt\n")
+            newfile.write("# date: {} (YYYY-MM-DD)\n".format(today))
+            newfile.write("# data: {}\n#\n".format(str(len(RETAINER))))
+
+            iterator = 0
+            for entry in RETAINER:
+                file_name = ''.join([entry, ".svg"])
+                keyword = str(entry)
+                iterator += 1
+
+                if iterator == 1:
+                    output = ''.join(
+                        ["| [[File:", file_name, "|thumb|", keyword, "]]"])
+                elif iterator == 2:
+                    output = ''.join(
+                        ["|| [[File:", file_name, "|thumb|", keyword, "]]"])
+                elif iterator == 3:
+                    output = ''.join([
+                        "|| [[File:", file_name, "|thumb|", keyword, "]]",
+                        "\n|-"
+                    ])
+                    iterator = 0
+                else:
+                    print("Warnung, eventuell fehlerhafte Ausgabe.")
+                newfile.write("{}\n".format(output))
+        print("File 'wikimedia_thumbnail_groups.txt' was written.")
+    except IOError:
+        print("Error writing file 'wikimedia_thumbnail_groups.txt'.  Exit.")
+        sys.exit()
+
+
+# clarification for argparse, start:
+parser = argparse.ArgumentParser(
+    description=
+    'List generator for Wikimedia .svg about DEK / Deutsche Verkehrsschrift.')
+parser.add_argument(
+    'inputfile',
+    type=argparse.FileType('r'),
+    help='Input text file, typically "wikimedia_addresses.txt"')
+
+group = parser.add_mutually_exclusive_group(required=True)
+group.add_argument('-w',
+                   '--wordlist',
+                   action='store_true',
+                   help='create the simple wordlist')
+group.add_argument('-p',
+                   '--previewlist',
+                   action='store_true',
+                   help='create the simple list of previews')
+group.add_argument('-g',
+                   '--grouppreview',
+                   action='store_true',
+                   help='create the grouped list of previews')
+
+args = parser.parse_args()
+# clarification for argparse, end.
+
+if __name__ == "__main__":
+    file_read()
     input_reader()
-    output_writer()
-
-
-if __name__ == '__main__':
-    main()
+    if args.wordlist:
+        print("Seek the creation of an wordlist")
+        output_wordlist()
+    elif args.previewlist:
+        print("Seek the creation of a previewlist.")
+        output_preview_list()
+    elif args.grouppreview:
+        print("Seek the creation of a grouped previewlist.")
+        output_grouped_preview()
