@@ -5,7 +5,7 @@
 # author:  nbehrnd@yahoo.com
 # license: MIT 2020
 # date:    2020-09-10 (YYYY-MM-DD)
-# edit:    2020-09-13 (YYYY-MM-DD) TESTING ONLY
+# edit:    2020-09-14 (YYYY-MM-DD)
 #
 """Assistenzskript #5 zu Wikimedia Projekt zur DEK / Verkehrsschrift.
 
@@ -50,15 +50,15 @@
     anschliessende Sortierung (a-z, sodann Umlaute) behandelt Gross-
     und Kleinschreibung ohne Unterschied.
 
-    Im Verlauf des Einsatzes fragt das Skript nach dem Ausgabeformat.
-    Dabei stehen zur Auswahl:
-    + Option [1] die fortlaufende, alphabetisch sortierte Wortliste.
+    Bereits bei Aufruf des Skriptes muss die Auswahl eines der drei
+    folgenden Ausgabeformate erfolgen:
+    + Option -w die fortlaufende, alphabetisch sortierte Wortliste.
       Da einige der Dateinamen mehrere Beispiele illustrieren, die
       durch ein Komma getrennt sind, werden die einzelnen Dateien
       voneinander ist das Trennzeichen das Semikolon.  Ablage in Datei
       [wikimedia_wordlist.txt].
 
-    + Option [2], die alphabetisch sortierte Liste von Dateinamen mit
+    + Option -p, die alphabetisch sortierte Liste von Dateinamen mit
       Hinweis auf das Vorschaubild (thumbnail) in einem Muster von
 
       [[File:DEK Deutsche Einheitskurzschrift - Verkehrsschrift - Aachen.svg|thumb|Aachen]]
@@ -66,7 +66,7 @@
       Hier ist das Trennzeichen der Zeilenvorschub, \n.  Ablage in
       Datei [wikimedia_thumbnail_list.txt].
 
-    + Option [3], die alphabetisch sortierte Liste von Dateinamen mit
+    + Option -g, die alphabetisch sortierte Liste von Dateinamen mit
       Hinweis auf das Vorschaubild (thumbnail) in Dreiergruppen nach
       dem Muster
 
@@ -129,8 +129,8 @@ def file_read():
         #        print(parser.print_usage())
 
 
-def new_input_reader():
-    """new version of reading the addressess, building an UTF-8 encoded register."""
+def input_reader():
+    """Build an UTF-8 encoded register."""
 
     for line in register:
         if str(line).startswith("#") is False:
@@ -240,11 +240,14 @@ def output_grouped_preview():
         sys.exit()
 
 
-# clarification for argparse, new block start:
-parser = argparse.ArgumentParser(description='Display text file contents')
-parser.add_argument('inputfile',
-                    type=argparse.FileType('r'),
-                    help='Input text file, typically "wikimedia_addresses.txt"')
+# clarification for argparse, start:
+parser = argparse.ArgumentParser(
+    description=
+    'List generator for Wikimedia .svg about DEK / Deutsche Verkehrsschrift.')
+parser.add_argument(
+    'inputfile',
+    type=argparse.FileType('r'),
+    help='Input text file, typically "wikimedia_addresses.txt"')
 
 group = parser.add_mutually_exclusive_group(required=True)
 group.add_argument('-w',
@@ -261,12 +264,11 @@ group.add_argument('-g',
                    help='create the grouped list of previews')
 
 args = parser.parse_args()
-# clarification for argparse, new block end.
+# clarification for argparse, end.
 
-# new block start:
 if __name__ == "__main__":
     file_read()
-    new_input_reader()
+    input_reader()
     if args.wordlist:
         print("Seek the creation of an wordlist")
         output_wordlist()
@@ -276,4 +278,3 @@ if __name__ == "__main__":
     elif args.grouppreview:
         print("Seek the creation of a grouped previewlist.")
         output_grouped_preview()
-# new block end.
