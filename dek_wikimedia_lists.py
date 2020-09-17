@@ -303,7 +303,7 @@ def variant_symbolizations():
         with open("wikimedia_variants.txt", mode="w") as newfile:
             # header commentaries
             newfile.write("# name: wikimedia_variants.txt\n")
-            newfile.write("# date: {}\n".format(today))
+            newfile.write("# date: {} (YYYY-MM-DD)\n".format(today))
             newfile.write("# data: {}\n#\n".format(len(variant_register)))
 
             # and the entries:
@@ -378,7 +378,7 @@ def check_abbreviations():
         with open("wikimedia_abbreviations.txt", mode="w") as newfile:
             # header comments
             newfile.write("# name: wikimedia_abbreviations.txt\n")
-            newfile.write("# date: {}\n".format(today))
+            newfile.write("# date: {} (YYYY-MM-DD)\n".format(today))
             newfile.write("# data: {}\n#\n".format(len(abbreviation_register)))
 
             for abbreviation in abbreviation_register:
@@ -450,7 +450,7 @@ def check_conjugations():
         with open("wikimedia_conjugation.txt", mode="w") as newfile:
             # commenting headers:
             newfile.write("# name: wikimedia_conjugation.txt\n")
-            newfile.write("# date: {}\n".format(today))
+            newfile.write("# date: {} (YYYY-MM-DD)\n".format(today))
             newfile.write("# data: {}\n#\n".format(len(conjugation_register)))
 
             for example in conjugation_register:
