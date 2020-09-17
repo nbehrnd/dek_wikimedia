@@ -5,7 +5,7 @@
 # author:  nbehrnd@yahoo.com
 # license: MIT 2020
 # date:    2020-09-10 (YYYY-MM-DD)
-# edit:    2020-09-14 (YYYY-MM-DD)
+# edit:    2020-09-17 (YYYY-MM-DD)
 #
 """Assistenzskript #5 zu Wikimedia Projekt zur DEK / Verkehrsschrift.
 
