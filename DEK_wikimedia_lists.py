@@ -81,6 +81,11 @@
 
       Ablage ist Datei [wikimedia_thumbnail_groups.txt].
 
+    + Option -v listet die mehrfache Symbolisierungen von gleichen
+      langschriftlichen Formen (_v1, _v2, -_v3, -_v4) mit ihrer
+      Stammform.  Die Sortierung ist alphabetisch (a-z, ä, ö, ü) ohne
+      Berücksichtigung von Gross- oder Kleinschreibung.
+
     Stets beginnt die Ausgabe mit einem vierzeiligen Kopf, der den
     Namen der Datei, das Erstellungsdatum und die Anzahl der aus
     [wikimedia_addresses.txt] verarbeiteten Zeilen benennt.  Das
@@ -240,6 +245,64 @@ def output_grouped_preview():
         sys.exit()
 
 
+def variant_symbolizations():
+    """List the raw_data files drawn in multiple variants.
+
+    Considered are variants explicitly labeled by _v1, _v2, _v3, and
+    _v4.  In addition, for a variant .svg named like 'example_v2.svg',
+    the script equally suggests the complement file 'example.svg'."""
+    variant_register = []
+    today = date.today()
+
+    # learn from the past:
+    for entry in register:
+        # skip plausible commentary lines:
+        if str(entry).startswith("#"):
+            continue
+
+        if str(entry)[-7:] in ["_v1.svg", "_v2.svg", "_v3.svg", "_v4.svg"]:
+            variant = str(entry).split("DEK")[1]
+            variant = ''.join(["DEK", variant])
+
+            # Recreate accents and umlauts from the internet notation:
+            variant = unquote(str(variant))
+
+            variant_register.append(str(variant))
+
+        # .svg are marked by "_v2.svg", but "_v1.svg" marks may be incomplete:
+        if str("_v2.svg") in str(entry):
+            complement_file = str(entry).split("DEK")[1]
+            complement_file = ''.join(["DEK", complement_file])
+
+            # replace "_v2.svg" by ".svg"
+            complement_file = complement_file.split("_v2.svg")[0]
+            complement_file = ''.join([complement_file, ".svg"])
+
+            # Recreate accents and umlauts from the internet notation:
+            complement_file = unquote(str(complement_file))
+
+            variant_register.append(str(complement_file))
+    variant_register.sort(key=str.lower)
+
+    # document findings:
+    try:
+        with open("wikimedia_variants.txt", mode="w") as newfile:
+            # header commentaries
+            newfile.write("# name: wikimedia_variants.txt\n")
+            newfile.write("# date: {}\n".format(today))
+            newfile.write("# data: {}\n#\n".format(len(variant_register)))
+
+            # and the entries:
+            for variant in variant_register:
+                newfile.write("{}\n".format(str(variant)))
+
+        print("File 'wikimedia_variants.txt' was written.")
+
+    except IOError:
+        print("Error writing file 'wikimedia_variants.txt'.  Exit.")
+        sys.exit()
+
+
 # clarification for argparse, start:
 parser = argparse.ArgumentParser(
     description=
@@ -263,6 +326,10 @@ group.add_argument('-g',
                    action='store_true',
                    help='create the grouped list of previews')
 
+group.add_argument('-v',
+                   '--variants',
+                   action='store_true',
+                   help='print a list of .svg drawn in variants')
 args = parser.parse_args()
 # clarification for argparse, end.
 
@@ -278,3 +345,7 @@ if __name__ == "__main__":
     elif args.grouppreview:
         print("Seek the creation of a grouped previewlist.")
         output_grouped_preview()
+
+    elif args.variants:
+        print("Print a list of symbolizations drawn in variants.")
+        variant_symbolizations()
