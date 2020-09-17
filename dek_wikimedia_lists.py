@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 
-# name:    DEK_wikimedia_lists.py
+# name:    dek_wikimedia_lists.py
 # author:  nbehrnd@yahoo.com
 # license: MIT 2020
 # date:    2020-09-10 (YYYY-MM-DD)
@@ -29,7 +29,7 @@
     von Wikimedia auch lokal abgespeichert zu haben.
 
     Gemeinsam mit Skript DEK_wikimedia_preformat.py verfolgt dieses
-    Skript, DEK_wikimedia_lists.py, den dazu alternativen Ansatz,
+    Skript, dek_wikimedia_lists.py, den dazu alternativen Ansatz,
     Wikimedia abzufragen, welche Dateien simultan mit "SVG" und
     "Deutsche Einheitskurzschrift" verschlagwortet sind (tagged), um
     nur aus dieser Liste die drei hilfreichen Listen zu bilden.  Das
@@ -40,7 +40,7 @@
     [wikimedia_addresses.txt] (siehe dort).  Von Pythons Eingabezeile
     wird dieses Skript mit
 
-    python DEK_wikimedia_lists.py [wikimedia_addresses.txt]
+    python dek_wikimedia_lists.py [wikimedia_addresses.txt]
 
     gestartet; [wikimedia_addresses.txt] ist der einzige, allerdings
     obligate Parameter.  Die Anschriften in [wikimeida_addresses.txt]
