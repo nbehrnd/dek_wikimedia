@@ -86,6 +86,14 @@
       Stammform.  Die Sortierung ist alphabetisch (a-z, ä, ö, ü) ohne
       Berücksichtigung von Gross- oder Kleinschreibung.
 
+    + Option -a listed in alphabetischer Ordnung (a-z, ä, ö, ü; ohne
+      Berücksichtigung von Gross- oder Kleinschreibung) Abkürzungen
+      darstellende .svg.  Gegenwärtig sind das langschriftliche Formen
+      mit mehr als einem Punkt (wie 'd. h.'); oder Formen mit mehr als
+      einem Grossbuchstaben bei simultaner Abwesenheit von entweder
+      Bindestrich, Unterstrich, Leerzeichen, oder dem kontrastierenden
+      String 'ABER'.
+
     Stets beginnt die Ausgabe mit einem vierzeiligen Kopf, der den
     Namen der Datei, das Erstellungsdatum und die Anzahl der aus
     [wikimedia_addresses.txt] verarbeiteten Zeilen benennt.  Das
@@ -303,6 +311,73 @@ def variant_symbolizations():
         sys.exit()
 
 
+def check_abbreviations():
+    """Identify and report symbolizations about abbreviations.
+
+    Entries are considered to be about an abbreviations if either a)
+    the stem contains more than one period, like in 'e.g.', 'd. M.'.
+    In addition b), if the stem does not contain a blank ' ' while
+    more than one character is upper case, like in 'UNESCO'.  Again,
+    the list will be sorted a-z, ä, ö, ü without discern for upper /
+    lower case spelling."""
+
+    abbreviation_register = []
+    today = date.today()
+
+    # learn from the past:
+    for entry in register:
+        # skip plausible commentary lines:
+        if str(entry).startswith("#"):
+            continue
+
+        file = str(entry).split("DEK")[1]
+        file = ''.join(["DEK", file])
+
+        # Recreate accents and umlauts from the internet notation:
+        file = unquote(str(file))
+
+        # identify the stem:
+        stem = str(file).split("_-_")[-1]
+        stem = str(stem).split(".svg")[0]
+
+        # test for periods:
+        count_periods = 0
+        for char in str(stem):
+            if str(char) is str("."):
+                count_periods += 1
+        if count_periods > 1:
+            abbreviation_register.append(file)
+
+        # check for upper case characters:
+        if (str("ABER") in str(stem)) or (str("_") in str(stem)) or (
+                str("-") in str(stem)) or (str(" ") in str(stem)):
+            pass
+        else:
+            count_upper_case = 0
+            for char in str(stem):
+                if str(char).isupper():
+                    count_upper_case += 1
+            if count_upper_case > 1:
+                abbreviation_register.append(file)
+    abbreviation_register.sort(key=str.lower)
+
+    # report the findings:
+    try:
+        with open("wikimedia_abbreviations.txt", mode="w") as newfile:
+            # header comments
+            newfile.write("# name: wikimedia_abbreviations.txt\n")
+            newfile.write("# date: {}\n".format(today))
+            newfile.write("# data: {}\n#\n".format(len(abbreviation_register)))
+
+            for abbreviation in abbreviation_register:
+                newfile.write("{}\n".format(abbreviation))
+        print("File 'wikimedia_abbreviations.txt' was written.")
+
+    except IOError:
+        print("Error writing 'wikimedia_abbreviations.txt'.  Exit.")
+        sys.exit()
+
+
 # clarification for argparse, start:
 parser = argparse.ArgumentParser(
     description=
@@ -330,6 +405,12 @@ group.add_argument('-v',
                    '--variants',
                    action='store_true',
                    help='print a list of .svg drawn in variants')
+
+group.add_argument('-a',
+                   '--abbreviations',
+                   action='store_true',
+                   help='list .svg about abbreviations')
+
 args = parser.parse_args()
 # clarification for argparse, end.
 
@@ -349,3 +430,6 @@ if __name__ == "__main__":
     elif args.variants:
         print("Print a list of symbolizations drawn in variants.")
         variant_symbolizations()
+
+    elif args.abbreviations:
+        check_abbreviations()
