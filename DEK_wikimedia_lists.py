@@ -94,6 +94,14 @@
       Bindestrich, Unterstrich, Leerzeichen, oder dem kontrastierenden
       String 'ABER'.
 
+    + Option -c listed die Dateien, die die Pronomina ich, du, er, sie
+      es, wir, ihr enthalten.  Die Gross- und Kleinschreibung spielt
+      weder bei der Identifizierung eine Rolle (auch 'Sie' gilt als
+      'sie', 'Ihr´ als 'ihr'), noch bei der Sortierung der Dateinamen
+      (a-z, ä, ö, ü).  Dateien können mehrfach gelistet werden, wenn
+      mehr als eine Downloadanschrift in der Inputdatei beschrieben
+      wird.
+
     Stets beginnt die Ausgabe mit einem vierzeiligen Kopf, der den
     Namen der Datei, das Erstellungsdatum und die Anzahl der aus
     [wikimedia_addresses.txt] verarbeiteten Zeilen benennt.  Das
@@ -378,6 +386,69 @@ def check_abbreviations():
         sys.exit()
 
 
+def check_conjugations():
+    """Identify symbolizations likely about conjugations.
+
+    A symbolization about conjugation consist of two or more words,
+    separated in the file name by an underscore.  In addition, it must
+    contain one of the following strings:  'ich_', 'du_', 'er_',
+    'sie_', 'es_', 'wir_' or 'ihr_'."""
+
+    conjugation_register = []
+    today = date.today()
+
+    # learn from the past:
+    for entry in register:
+        # skip plausible commentary lines:
+        if str(entry).startswith("#"):
+            continue
+
+        file = str(entry).split("DEK")[1]
+        file = ''.join(["DEK", file])
+
+        # Recreate accents and umlauts from the internet notation:
+        file = unquote(str(file))
+
+        # identify the stem:
+        stem = str(file).split("_-_")[-1]
+        stem = str(stem).split(".svg")[0]
+
+        # exclude explicit variant symbolizations
+        if str(stem)[-3:] in ("_v1", "_v2", "_v3", "_v4"):
+            continue
+        # exclude contrasting symbolizations:
+        if str("ABER") in str(stem):
+            continue
+        # exclude symbolizations with only one word:
+        if str("_") not in str(stem):
+            continue
+
+        # conjugation test
+        test_list = str(stem).split("_")
+        for word in test_list:
+            if str(word).lower() in [
+                    'ich', 'du', 'er', 'sie', 'es', 'wir', 'ihr'
+            ]:
+                conjugation_register.append(file)
+    conjugation_register.sort(key=str.lower)
+
+    # report the results:
+    try:
+        with open("wikimedia_conjugation.txt", mode="w") as newfile:
+            # commenting headers:
+            newfile.write("# name: wikimedia_conjugation.txt\n")
+            newfile.write("# date: {}\n".format(today))
+            newfile.write("# data: {}\n#\n".format(len(conjugation_register)))
+
+            for example in conjugation_register:
+                newfile.write("{}\n".format(example))
+        print("File 'wikimedia_conjugation.txt' was written.")
+
+    except IOError:
+        print("Error writing file 'wikimedia_conjugation.txt'.  Exit.")
+        sys.exit()
+
+
 # clarification for argparse, start:
 parser = argparse.ArgumentParser(
     description=
@@ -411,6 +482,11 @@ group.add_argument('-a',
                    action='store_true',
                    help='list .svg about abbreviations')
 
+group.add_argument('-c',
+                   '--conjugations',
+                   action='store_true',
+                   help='list .svg about conjugations')
+
 args = parser.parse_args()
 # clarification for argparse, end.
 
@@ -433,3 +509,6 @@ if __name__ == "__main__":
 
     elif args.abbreviations:
         check_abbreviations()
+
+    elif args.conjugations:
+        check_conjugations()
