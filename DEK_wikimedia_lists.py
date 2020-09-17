@@ -310,7 +310,13 @@ def variant_symbolizations():
 
             # and the entries:
             for variant in variant_register:
-                newfile.write("{}\n".format(str(variant)))
+                output = ""
+                for char in str(variant):
+                    if str(char) == str("_"):
+                        output += str(" ")
+                    else:
+                        output += str(char)
+                newfile.write("{}\n".format(str(output)))
 
         print("File 'wikimedia_variants.txt' was written.")
 
@@ -378,7 +384,14 @@ def check_abbreviations():
             newfile.write("# data: {}\n#\n".format(len(abbreviation_register)))
 
             for abbreviation in abbreviation_register:
-                newfile.write("{}\n".format(abbreviation))
+                output = ""
+                for char in str(abbreviation):
+                    if str(char) == str("_"):
+                        output += str(" ")
+                    else:
+                        output += str(char)
+                newfile.write("{}\n".format(str(output)))
+
         print("File 'wikimedia_abbreviations.txt' was written.")
 
     except IOError:
@@ -441,7 +454,14 @@ def check_conjugations():
             newfile.write("# data: {}\n#\n".format(len(conjugation_register)))
 
             for example in conjugation_register:
-                newfile.write("{}\n".format(example))
+                output = ""
+                for char in str(example):
+                    if str(char) == str("_"):
+                        output += str(" ")
+                    else:
+                        output += str(char)
+                newfile.write("{}\n".format(str(output)))
+
         print("File 'wikimedia_conjugation.txt' was written.")
 
     except IOError:
