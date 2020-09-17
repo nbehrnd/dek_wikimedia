@@ -1,0 +1,47 @@
+# name: wikimedia_abbreviations.txt
+# date: 2020-09-17
+# data: 43
+#
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - a. D. (außer Dienst).svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ABBA.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ARD.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ASS.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - CNN.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - CSU.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - d. h. (das heißt).svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - d. J. (dieses Jahres).svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - d. M. (dieses Monats).svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - DDR.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - DIN.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - DM.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - Dr. med. dent.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - Dr. rer. nat. (Doktor der Naturwissenschaften).svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - e. K. (eingetragener Kaufmann).svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - e. V. (eingetragener Verein).svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - EKG.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - EU.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - GEMA.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - GmbH.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - i. A. (im Auftrag).svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - i. V. (in Vertretung).svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - i. V. m. (in Verbindung mit).svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - IBM.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ich kann ich soll ich will ich werde ich habe du kannst ... du hast.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - MdB.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - MdL.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - MITROPA.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - NATO.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - OHG.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - PS.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - röm.-kath. (römisch-katholisch).svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - SOS.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - u. a. (und andere).svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - u. a. (unter anderem).svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - UFA.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - UNESCO.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - UNO.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - USA.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - usw. usf. (und so weiter und so fort).svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - VW.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - www.internetadresse.de.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - z. B. (zum Beispiel).svg

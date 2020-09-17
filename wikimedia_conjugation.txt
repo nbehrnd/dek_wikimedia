@@ -1,0 +1,338 @@
+# name: wikimedia_conjugation.txt
+# date: 2020-09-17
+# data: 334
+#
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - aber es sind nicht Affen.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - artig befolge ich den Rat.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - auf be- das dem den der deutsch die er er- es für gegen hat ich in ist kann nicht ohne sind so und ver- vom von vor- wo über.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - auf be- das dem den der deutsch die er er- es für hat ich in ist kann nicht ohne sind so und ver- vom von wo.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - auf be- das dem den der deutsch die er er- es für ich in ist kann nicht ohne sind so und ver- vom von wo.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - b be- r er f für.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - be- das dem den der deutsch die er er- es.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - dann kommen wir eben erst morgen oder am Montag an.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - das Mehl nehme ich für den Teig.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - der die er es.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - der er.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - der König ist tot, es lebe der König.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - Der Tee hat ihr nicht geschmeckt.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - Der Tee hatte ihr nicht geschmeckt.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - die er es für ich in ist.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - die es.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - Die Retter hatten es.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - die Väter hatten es nicht.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - du bist.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - Du bist es.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - du hast.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - du hast es.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - du hattest.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - du hattest es.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - du hältst.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - du hättest.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - du kannst.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - du kannst du sollst du willst du wirst du hast.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - du kanntest.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - du konntest.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - du sollst.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - du solltest.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - du sonderst dich ab.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - du sparst.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - du sähst.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - du säst.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - du warst.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - du willst.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - du wirst.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - du wolltest.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - du wurdest.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - du wärst.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - du würdest.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - Egon und ich.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - Egon und ich sind mehrere Monate in Rom.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - er (Kürzel).svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - er bog es so.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - er bot.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - er die.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - er gab.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - er geht.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - er hat.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - er hat den Rat sogar angenommen.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - Er hat es.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - er hatte.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - Er hatte es.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - er hatte es nicht vergraben.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - er hatte mir vergeben.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - er hätte.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - er ist's.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - er ist.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - er ist da.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - er ist der Retter.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - er ist erfahren.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - Er ist es.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - er ist es nicht.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - er ist in der Apotheke.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - er ist Kellner.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - er ist nicht in dem gelben Koffer.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - er kann.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - er kann das Motorrad oder das Fahrrad nehmen.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - Er kann den Apparat hergeben.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - Er kann die Fähre nehmen.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - er kann er soll er will er wird er hat.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - er kann mehrere Thermometer bekommen.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - er kannte.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - er kennt die Norm.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - er konnte.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - er leiht.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - er liebt kleine Tiere.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - er macht es recht.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - Er mähte den Hafer.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - er naht.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - er reiht sich ein.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - er rettet.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - er rettete.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - er rettete den Tenor.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - er sie es.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - er sie es wurde.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - er sollte.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - er sondert sich ab.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - er trat in die Arena.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - er war.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - er wird.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - er wirds.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - er wirds schaffen.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - er wollte.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - er wurde.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - er wäre.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - er würde.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - es geht.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - es geht nicht darum, wer du bist, sondern wen du kennst.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - es geht so.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - Es ist der Bruder.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - es ist der Pilot.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - Es ist der Retter der mehrere Boote rettete.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - es ist rot.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - es ist vorbei.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - es ist wie es ist.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - es regnete.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - es sind Tomaten in der Kammer.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - es würde.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - fahren Sie.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - für ich in ist kann nicht ohne sind so und ver- wo.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - Hannemann, geh du voran, du hast die größten Stiefel an.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - Hannemann, geh du voran.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ich bekam Rabatt.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ich berate den Baron.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ich betone das so.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ich bin.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - Ich bin dafür.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ich bin dann so weit.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ich bin du bist er ist.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ich bin du bist er ist wir sind ihr seid sie sind.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - Ich bin es.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - Ich bin hier.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - Ich bin wieder da.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ich bog.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ich denke, dass das Boot rot ist.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ich du er wir ihr sie.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ich fege.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ich gebe.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ich gebe dem Mann den Kaffee.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ich gebe es dem Mann.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ich gehe nie in das Kino.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ich gehe regelmäßig auf den Ball.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ich habe.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ich habe du hast er hat.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ich habe du hast er hat sie hat.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ich habe du hast er hat sie hat ich hatte du hattest er hatte sie hatte.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ich habe du hast er hat wir haben ihr habt sie haben.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - Ich habe es.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ich habe nichts.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ich hatte du hattest er hatte sie hatte.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ich hatte du hattest er hatte wir hatten ihr hattet sie hatten.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - Ich hatte es.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ich hätte.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ich hätte du hättest er hätte.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ich hätte du hättest er hätte wir hätten ihr hättet sie hätten.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ich höre den Lärm.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ich in ohne.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ich in Rom.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ich in sind.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ich kann.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ich kann du kannst er kann sie kann.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ich kann du kannst er kann wir können ihr könnt sie können.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ich kann ich soll ich will ich werde ich habe.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ich kann ich soll ich will ich werde ich habe du kannst ... du hast.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ich kann ich soll ich will ich werde ich habe du kannst du sollst du willst du wirst du hast er kann er soll er will er wird er hat.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - Ich kann mit mir selbst nichts anfangen.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ich kann nicht mehrere Thermometer bekommen.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ich kann nicht ohne.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ich kann nicht ohne deutsches Brot leben.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ich kann Werner beraten.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ich kannte.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ich kannte du kanntest er kannte.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ich kannte du kanntest er kannte wir kannten ihr kanntet sie kannten.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ich kenne.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ich kenne denTäter.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ich klebe das Plakat in das Regal.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ich komme.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ich komme gern.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ich komme wenn Peter geht.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ich konnte.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ich konnte du konntest er konnte.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ich konnte du konntest er konnte ich könnte du könntest er könnte.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ich konnte du konntest er konnte wir konnten ihr konntet sie konnten.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ich könnte du könntest er könnte.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ich könnte du könntest er könnte wir könnten ihr könntet sie könnten.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ich meine.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ich möchte dir ja helfen aber ich kann nicht.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ich nahm das Boot und das Brett.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ich nehme.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ich nehme den Bohrer.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ich nehme es an.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ich nehme mehr Tee.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ich parke den Wagen.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ich rate es.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ich rette.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ich sei.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ich soll.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ich soll du sollst er soll sie soll.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ich soll du sollst er soll wir sollen ihr sollt sie sollen.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ich soll wir sollen ich sollte.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ich sollte.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ich sollte du solltest er sollte.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ich sollte du solltest er sollte wir sollten ihr solltet sie sollten.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ich sollte du solltest er sollte wir sollten ihre solltet sie sollten.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ich tippe die Hefte ab.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ich und Otto.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ich war.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ich war du warst er war.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ich war du warst er war wir waren ihr wart sie waren.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ich werde.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ich werde du wirst er wird sie wird.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ich werde du wirst er wird wir werden ihr werdet sie werden.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ich will.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ich will dir helfen.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ich will du willst er will sie will.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ich will du willst er will wir wollen ihr wollt sie wollen.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ich wollte.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ich wollte du wolltest er wollte.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ich wollte du wolltest er wollte wir wollten ihr woltet sie wollten.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ich wurde.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ich wurde du wurdest er wurde.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ich wurde du wurdest er wurde wir wurden ihr wurdet sie wurden.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ich wäre.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ich wäre du wärst er wäre.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ich wäre du wärst er wäre wir wären ihr wärt sie wären.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ich würde.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ich würde du würdest er würde.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ich würde du würdest er würde wir würden ihr würdet sie würden.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ihr habt.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - Ihr habt es.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ihr hattet.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - Ihr hattet es.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ihr hättet.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ihr kanntet.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ihr seid.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - Ihr seid es.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ihr sollt.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ihr solltet.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ihr wart.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ihr werdet.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ihr wolltet.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ihr wurdet.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ihr wäret.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ihr wärt.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ihr würdet.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - im November war es so warm.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - in den Mooren ist es öde.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - in den oberen Etagen ist es heller.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - in sind er der wir wird über würde vor worden sondern soll.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ist er es.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - kann er am Montag kommen.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - Kann er Kaffee haben.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - kann ich jetzt die Kanne bekommen.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - Man dachte er habe Recht.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - meine (von Meinung, ich meine).svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - morgen ist er nicht mehr in Polen.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ohne den Notar kann ich nicht helfen.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ohne Fahrrad kann ich nicht kommen.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - Onkel Holger und ich gehen in die Halle.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - Sie (Großbuchstabe).svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - sie haben.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - Sie haben es.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - Sie hat die Bücher.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - Sie hat es.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - Sie hatte es.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - sie hatten.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - Sie hatten es.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - Sie hatten Motoren.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - sie hätten.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - Sie ist es.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - sie kann.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - sie kannten.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - sie meinen meinen Bruder.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - sie sind.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - Sie sind es.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - Sie sinds.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - sie sollten.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - sie sondert sich ab.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - sie werden.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - sie wird.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - sie wollten.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - sie wurde.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - sie wurden.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - sie wären.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - sie würde.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - sie würden.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - so geht es.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - ur, ver, vor, kann, es.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - wann kann er das Tor öffnen.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - Wann und wo gab er die Mappe ab.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - Was du heute kannst besorgen, das verschiebe nicht auf morgen.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - Wenn das überhaupt wahr ist, dass er dagegen redet.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - wenn du so viele aussonderst bleiben nicht mehr genug übrig.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - wenn er kommen kann.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - wenn es trocken ist.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - wie du mir, so ich dir.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - wir haben.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - Wir haben es.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - wir haben ihr habt sie haben.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - wir haben ihr habt sie haben wir hatten ihr hattet sie hatten.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - wir hatten.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - Wir hatten es.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - wir hatten ihr hattet sie hatten.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - wir hätten.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - wir hätten ihr hättet sie hätten.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - wir kannten.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - wir kannten ihr kanntet sie kannten.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - wir kommen gegen Morgen.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - wir können ihr könnt sie können.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - wir könnten ihr könntet sie könnten.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - wir seien.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - wir sind.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - Wir sind es.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - wir sind gewillt.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - wir sind ihr seid sie sind.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - wir sollten.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - wir sollten ihr solltet sie sollten.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - wir sondern uns ab.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - wir waren.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - wir waren ihr wart sie waren.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - wir waren sogar vier Tage in Kanada bei der Bärenjagd.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - wir werden.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - wir werden haben.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - wir werden ihr werdet sie werden.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - wir wollen ihr wollt sie wollen.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - wir wollten.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - wir wollten ihr wolltet sie wollten.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - wir wurden.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - wir wurden ihr wurdet sie wurden.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - wir wären.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - wir wären dann so weit.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - wir wären ihr wärt sie wären.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - wir würden.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - wir würden ihr würdet sie würden.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - Wissen Sie wo der Schlüssel ist.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - wo kann ich Mehl bekommen.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - wo kann ich tanken.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - Wofür war er.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - Wovor hat er den Lehrer warnen wollen.svg
+DEK Deutsche Einheitskurzschrift - Verkehrsschrift - zu ihr.svg
