@@ -98,9 +98,7 @@
       es, wir, ihr enthalten.  Die Gross- und Kleinschreibung spielt
       weder bei der Identifizierung eine Rolle (auch 'Sie' gilt als
       'sie', 'Ihr´ als 'ihr'), noch bei der Sortierung der Dateinamen
-      (a-z, ä, ö, ü).  Dateien können mehrfach gelistet werden, wenn
-      mehr als eine Downloadanschrift in der Inputdatei beschrieben
-      wird.
+      (a-z, ä, ö, ü).
 
     Stets beginnt die Ausgabe mit einem vierzeiligen Kopf, der den
     Namen der Datei, das Erstellungsdatum und die Anzahl der aus
@@ -438,11 +436,13 @@ def check_conjugations():
 
         # conjugation test
         test_list = str(stem).split("_")
+        example_identified = False
         for word in test_list:
-            if str(word).lower() in [
+            if (example_identified is False) and (str(word).lower() in [
                     'ich', 'du', 'er', 'sie', 'es', 'wir', 'ihr'
-            ]:
+            ]):
                 conjugation_register.append(file)
+                example_identified = True
     conjugation_register.sort(key=str.lower)
 
     # report the results:
