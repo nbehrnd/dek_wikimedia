@@ -1,0 +1,39 @@
+Basiert auf Datei
+
+Steno DEK Verkehrsschrift SVG Version 2021-01-31.rar
+
++ Skript grundlinie.py diente dazu, global alle grauen Linien nun
+  einheitlich schwarz zu zeichnen.  Da .svg sinnvolle Textdateien
+  sind, war die Korrektur leicht auf alle Dateien anwendbar.  Von
+  32'587 Beispielen sind 32'134 betroffen (cf. bearbeitet).
+
++ new_dir1.rar, new_dir2.rar, new_dir3.rar, new_dir4.rar enthalten
+  alle .svg nach der Bearbeitung, aber auch die wenigen, die keiner
+  Korrektur bedurften.  Der von mir benutzte Rechner kann nicht
+  simultan alle 32k Dateien in ein in ein .rar packen, deshalb sind
+  die Dateien in vier Portionen zu bis zu (etwa) 10'000 Dateien
+  abgelegt.
+
++ png1... Ordner enthalten probeweise bis zu etwa 100 Dateien nach
+  der Umschrift in .png.  Erste Zahl: maximale Breite, zweite Zahl
+  maximale Hoehe.  Das Programm staucht unter Erhaltung der Seiten-
+  verhaeltnisse beide Dimensionen so lange, bis das .png in dieses
+  Raster passt.  Stellenweise sind die .png etwas kürzer / etwas
+  flacher, als die anderen -- erst einmal ausprobieren.
+
+  Vielleicht ist auch gar nicht die gesamte Weissfläche oberhalb /
+  unterhalb von Obergrenze / Untergrenze, sowie vor / nach der
+  Testzeile nötig, und ein Abschneiden vorteilhaft (cf. Dateien im
+  Ordner png1_600x450px_crop).
+
++ Datei test.pdf hat probeweise einige der ausgeschnittenen .png in
+  ein .pdf mehr zusammengeschoben; am Bildschirm scheinen mir die
+  Symbolisierungen nicht zu klein.
+
++ Datei output_09.pdf und output_16.pdf: Ich finde es schade, wenn
+  die Mühe, die Stenogramme mit Inkskape zusammenzufügen durch eine
+  Ausgabe als .png wieder verpixelt und damit teilweise eingerissen
+  wird.  Probeweise einmal die Ausgabe als .pdf, wobei es noch keine
+  erklärenden langschriftlichen Unterschriften hat.
+
+END
