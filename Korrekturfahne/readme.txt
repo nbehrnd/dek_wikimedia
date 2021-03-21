@@ -7,8 +7,14 @@
 
 + generator_Hauptteil_5spaltig.pdf
 
- Zur einfacheren Erkennung überbreiter Stenogramme (1963 Seiten, 40 MB)
- auf Blättern zu 5 Spalten / 6 Zeilen (30 Stenogramme / Seite).  Seite
- 505/1963:  Stenogramme für geduldet, geduldeter, geduldets scheinen
- beim Prozessieren verloren gegangen zu sein (Neuaufbau aus dem Archiv
- nötig), deshalb ist das eine provisorische Ausgabe.
+ Zur einfacheren Erkennung überbreiter Stenogramme (1178 Seiten, 28 MB)
+ auf Blättern zu 5 Spalten / 6 Zeilen (30 Stenogramme / Seite).  Im
+ Gegensatz zu generator_Hauptteil.pdf ein anderes Sortierschema [A-Z],
+ dass
+ + Umlaute (ä, ö, ü) wie (a, o, u)
+ + ß wie ss
+ + é wie e
+ sortiert (geprüft mit der Testliste zu DIN 5007 der deutschsprachigen
+ Wikipedia zu diesem Thema).  Im Zweifel kommt ein kleiner Buchstabe
+ vor einem grossem (e.g., école vor École).  Verbesserte Nutzung des
+ Formates, daher etwa ein Drittel kleineres Dateivolumen.
