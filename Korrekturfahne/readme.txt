@@ -18,3 +18,7 @@
  Wikipedia zu diesem Thema).  Im Zweifel kommt ein kleiner Buchstabe
  vor einem grossem (e.g., école vor École).  Verbesserte Nutzung des
  Formates, daher etwa ein Drittel kleineres Dateivolumen.
+
++ generator_A, B, C, G, K, L, N, O, P: thematische Stenogrammgruppen,
+  ebenso auf Blättern zu 5 Spalten / 6 Zeilen (30 Stenogramme / Seite).
+  Sortierschema wie im generator_Hauptteil_5spaltig.pdf.
