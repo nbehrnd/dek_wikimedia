@@ -7,8 +7,8 @@
 
 + generator_Hauptteil_5spaltig.pdf
 
- Zur einfacheren Erkennung überbreiter Stenogramme (1178 Seiten, 28 MB)
- auf Blättern zu 5 Spalten / 6 Zeilen (30 Stenogramme / Seite).  Im
+ Zur einfacheren Erkennung überbreiter Stenogramme (993 Seiten, 28 MB)
+ auf Blättern zu 5 Spalten / 8 Zeilen (40 Stenogramme / Seite).  Im
  Gegensatz zu generator_Hauptteil.pdf ein anderes Sortierschema [A-Z],
  dass
  + Umlaute (ä, ö, ü) wie (a, o, u)
@@ -17,7 +17,10 @@
  sortiert (geprüft mit der Testliste zu DIN 5007 der deutschsprachigen
  Wikipedia zu diesem Thema).  Im Zweifel kommt ein kleiner Buchstabe
  vor einem grossem (e.g., école vor École).  Verbesserte Nutzung des
- Formates, daher etwa ein Drittel kleineres Dateivolumen.
+ Formates, daher etwa ein Drittel kleineres Dateivolumen.  Geminderter
+ Abstand zwischen Stenogramm und langeschriftlicher Form erlaubt die
+ Wiedergabe von zwei weiteren (nun gesamthaft bis zu acht) Zeilen je
+ Blatt.
 
 + generator_A, B, C, G, K, L, N, O, P: thematische Stenogrammgruppen,
   ebenso auf Blättern zu 5 Spalten / 6 Zeilen (30 Stenogramme / Seite).
