@@ -23,7 +23,9 @@
  Blatt.  Gruppierung der Einträge nach ihrem ersten Buchstaben (Gross-
  und Kleinschreibung irrelevant; Gruppen Ä, Ö, Ü nach ihrer jeweiligen
  Gruppe A, O, oder U), die jeweils mit einer neuen Seite beginnen,
- organisiert als Kapitel.
+ organisiert als Kapitel.  Momentan sind die Kapitelnummern (statt der
+ charakteristischen ersten Buchstaben) Inhalt des nur auf Seiten mit
+ ungerader Seitenzahl angebrachten Daumenregisters.
 
 + generator_A, B, C, G, K, L, N, O, P: thematische Stenogrammgruppen,
   ebenso auf Blättern zu 5 Spalten / 6 Zeilen (30 Stenogramme / Seite).
