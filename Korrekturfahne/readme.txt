@@ -30,13 +30,15 @@
  Einträge auf (jedoch keine Verknüpfung zu den korrespondierenden
  Stenogrammen).
 
-+ Muster_A.pdf (83 Seiten, 2325 Einträge, 2.5MB).
++ Muster_A.pdf (83 Seiten, 2325 Einträge, 2.9MB).
   Basierend auf bisherigen Arbeiten an synoptischen Datei
   generator_Hauptteil_5spaltig.pdf.  Für weitere Verbesserungen ist
   einfacher, diese erst an einem kleinen Muster zu testen (hier: nur
   Stenogramme mit Anfangsbuchstaben a, A, ä, oder Ä zu berücksichtigt).
   Nun auch mit wörterbuchähnlicher Kopfzeile mit den langschriftlichen
   Formen des ersten und des letzten Stenograms der aktuellen Seite.
+  Versuchsweise mit einem hyperlink von der langschriftlichen Form
+  am Anfang des Kapitels auf die Seite mit dem Stenogramm.
 
 + generator_A, B, C, G, K, L, N, O, P: thematische Stenogrammgruppen,
   ebenso auf Blättern zu 5 Spalten / 6 Zeilen (30 Stenogramme / Seite).
