@@ -1,33 +1,20 @@
 #!/usr/bin/python3
 
-# name:   grundlinie.py
+# name:   dek_grundlinie.py
 # author: nbehrnd@yahoo.com
 # date:   2021-03-08 (YYYY-MM-DD)
-# edit:
+# edit:   2021-04-03 (YYYY-MM-DD)
 """Korrektur der Grundlinie
 
 * Hintergrund
-Eine unbestimmte Anzahl DEK .svg nutzt nur eine graue Grundlinie.  Um
+Eine unbestimmte Anzahl DEK .svg nutzt nur eine graue Lineatur.  Um
 diese besser zu erkennen, sollen die .svg einheitlich eine schwarze
-Grundlinie nutzen.
+Lineatur nutzen.
 
-Die Grundlinie ist das erste in der Wiedergabe sichtbare Element, alle
-anderen Linien und das Stenogramm werden erst danach beschrieben.  In
-Inkscape .svg wird ein schwarzer Linienzug mit
-
-stroke:#000000;
-
-definiert (momentan zu sehen bei Untergrenze, Oberlinie, Obergrenze).
-
-Die Grundlinie ist zur Zeit definiert als ein Grau mit
-
-stroke:#969696;
-
-Zur Korrektur muss auch diese Definition auf
-
-stroke:#000000;
-
-angepasst werden.
+Teilweise erscheint die Lineatur grau, da sie als grau definiert wurde
+('stroke:#969696;').  In anderen Beispielen verursacht der Eintrag
+'stroke-opacity:0.83589747' im letzlich genutzten .pdf diese Anmutung.
+Beide Ursachen werden mit diesem Skript korrigiert.
 
 * Nutzung
 
@@ -56,21 +43,34 @@ def identificator():
 
 
 def corrector(file=""):
-    """Tausche graue Linie durch schwarze Linie aus."""
-    input_file = str(file)
+    """Tausche graue Linie durch schwarze Linie aus.
+
+    Zahlreiche Beispiele definieren die Lineatur mit 'stroke:#969696';
+    in diesen wird nun einheitlich die Farbdefinition einer schwarzen
+    Linien mit 'stroke:#000000' angewandt.
+
+    Teilweise tritt die Definition 'stroke-opacity:0.83589747', der
+    diese Linien letzlich im .pdf ebenfalls grau darstellt.  Deshalb
+    der zweite Austausch, der diese Anweisungen gesamthaft auf ein
+    einheitliches 'stroke-opacity:1.0' umschreiben soll."""
     intermediate = str(file) + str("_intermediate")
 
     # Lies den bisherigen Inhalt:
     with open(file, mode="r") as source:
         content = source.read()
 
-        # Tausche die Liniendefinition:
+        # Tausche die Liniendefinition, grau gegen schwarz:
         gray_line = re.compile("stroke:#969696;")
         substituted = str(gray_line.sub("stroke:#000000;", content))
 
+        # Tausche die Liniendefinition, keine Schattierung
+        opacity = re.compile("stroke-opacity:\d\.?\d*")
+        no_shadow = str(opacity.sub("stroke-opacity:1.0", substituted))
+
         # Lege eine korrigierte Datei an:
         with open(intermediate, mode="w") as newfile:
-            newfile.write(substituted)
+            # newfile.write(substituted)
+            newfile.write(no_shadow)
 
 
 def space_cleaning(file=""):
