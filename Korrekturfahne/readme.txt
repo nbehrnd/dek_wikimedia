@@ -43,4 +43,12 @@
 + generator_A, B, C, G, K, L, N, O, P: thematische Stenogrammgruppen,
   ebenso auf Blättern zu 5 Spalten / 6 Zeilen (30 Stenogramme / Seite).
   Sortierschema wie im generator_Hauptteil_5spaltig.pdf.
+
++ Muster_light.pdf (5 Blätter, vier Einträge Beule, 19 kB) Die bisher
+  durchgezogene Grundlinie kann bei manchen Beispielen der DEK wie
+  eben etwa Beule schwer vom Stenogram an-sich unterschieden werden.
+  Nach dem Beispiel der Rhodiablöcke wird probeweise eine Lineatur mit
+  schwarzen Punkten eingesetzt; letzlich soll zu Gunsten der Klarheit
+  der Darstellung nur noch die Grundlinie, nicht aber Untergrenze,
+  Oberlinie, Obergrenze wiedergegeben werden.
   
